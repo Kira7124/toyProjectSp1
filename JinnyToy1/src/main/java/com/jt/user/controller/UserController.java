@@ -22,10 +22,13 @@ public class UserController {
 	
 	//메인페이지 호출 GET
 	@RequestMapping(value="/mainpage",method=RequestMethod.GET)
-	public void mainpage() {
-		logger.debug("main 페이지 출력!");
-		
+	public void mainpage() {		
+		logger.debug("메인페이지 GET 호출!");
 	}
+	
+	
+	
+	
 	
 	
 	
