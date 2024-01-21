@@ -8,6 +8,10 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
+	<context-param>
+		<param-name>securityClass</param-name>
+		<param-value>com.mes2.config.SecurityConfig</param-value>
+	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
@@ -29,5 +33,23 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+	<!-- 추가적인 설정 filter (시큐리티 안넣었음) -->
+	<filter>
+		<filter-name>setUTF8</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>setUTF8</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+
+
 
 </web-app>
