@@ -11,8 +11,9 @@
 	<!-- HikariCP : 연결정보 저장객체 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
-		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/toy1?allowMultiQueries=true" />
+		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/toy1" />
 		<property name="username" value="root"/>
+		<property name="password" value="1234"/>
 	</bean>
 	
 	
