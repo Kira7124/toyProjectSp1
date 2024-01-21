@@ -1,10 +1,29 @@
 package com.jt.user.service;
 
-import org.springframework.stereotype.Repository;
+
+import javax.inject.Inject;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import com.jt.user.persistence.userDAO;
 
-@Repository
+@Service
 public class userServiceImpl implements userDAO {
+	
+	
+	
+	private static final Logger logger = LoggerFactory.getLogger(userServiceImpl.class);
+	
+	
+	@Inject
+	private userDAO udao;
+	
+	
+	
+	
+	
+	
 	
 }
