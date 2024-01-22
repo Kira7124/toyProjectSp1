@@ -7,10 +7,27 @@
   
   
   <mapper namespace="com.jt.mapper.UserMapper">
-  		
+  
+  
+  	<!--로그인 -->
+  	<select id="userLogin" resultType="com.jt.user.userDTO">
+  		select * from user 
+  		where userid=#{userid} and userpw=#{userpw}
+  	</select>
   	
-  
-  
-  
-  
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
   </mapper>
