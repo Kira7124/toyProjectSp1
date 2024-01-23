@@ -10,7 +10,7 @@
   
   
   	<!--로그인 -->
-  	<select id="userLogin" resultType="com.jt.user.userDTO">
+  	<select id="userLogin" resultType="com.jt.user.domain.userDTO">
   		select * from user 
   		where userid=#{userid} and userpw=#{userpw}
   	</select>
