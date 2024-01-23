@@ -9,8 +9,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
  <body>
-					
-
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">코딩부스터를 소개합니다!</h1>
+			<p class="text-center">코딩부스터는 IT</p>
+		</div>
+	</div>
+	
+						
+	
 
 
 
